@@ -84,4 +84,4 @@ for col in feature_list:# 특정 열에 있는 null 값을 0으로 대체
 # 결과 확인
 print(df_sorted.isnull().sum())
 
-df_sorted.to_csv('/content/drive/MyDrive/BME/preprocessed_data.csv', index=False)
+df_sorted.to_csv('/content/drive/MyDrive/BME/modified_data2.csv', index=False)
