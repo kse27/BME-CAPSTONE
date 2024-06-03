@@ -8,9 +8,9 @@ Date : 2024.03 - 2024.06 <br/>
 ## Data Preprocessing
 
 1. Merge 3 Raw Data
-- #1 Grouping
-- #2 Pivoting
-- #3 Merging
+  #1 Grouping
+  #2 Pivoting
+  #3 Merging
 
 2. NULL 값 처리
 
