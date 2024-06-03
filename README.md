@@ -1,6 +1,6 @@
 # BME-CAPSTONE 
 
-Title : UPDRS Prediction Using Time Series Data of Protein/Peptide <br/>
+Title : **UPDRS Prediction Using Time Series Data of Protein/Peptide** <br/>
 Member : BME 21 김시은, BME 21 유희진 <br/>
 Date : 2024.03 - 2024.06 <br/>
 
@@ -20,7 +20,7 @@ _data_preprocessing.py_
 ## Train Model
 _compare_model.py_
 
-For regression, we tried XGBoost, SVM, Random Forest model and the ensemble of those models. Model training was conducted using the pre-processed data which we just did as input, and each MSE was obtained and the results were compared.
+회귀문제 해결을 위해, XGBoost, SVM, Random Forest 모델과 각각을 앙상블하여 만든 모델들을 사용하여 결과를 비교해보았습니다. 우리가 방금 한 전처리 데이터를 입력으로 사용하여 모델 학습을 진행하였으며, 각 MSE를 구하여 모델간의 결과를 비교했습니다. 그결과 XGBoost 와 Random Forest를 합친 모델이 4가지의 지표에 있어서 모두 좋은 결과가 나타났음을 알 수 있었습니다. 
 
 ![스크린샷 2024-06-04 013043](https://github.com/kse27/BME-CAPSTONE/assets/145419092/32a8b504-c981-4651-ac59-b329a899d642)
 
@@ -32,7 +32,9 @@ _feature_extraction_50.py_
 ![스크린샷 2024-06-04 013420](https://github.com/kse27/BME-CAPSTONE/assets/145419092/df5bf007-a145-4240-a0ff-d82517cd254e)
 
 ## Train LSTM model
+_lstm.py_
 
+-데이터에 시계열 데이터를 포함하여 LSTM 모델으로 학습해보았습니다. 이를 통해, 각 환자마다 달마다 변화하는 추이를 학습하여 다음 방문때의 UPDRS 를 예측할 수 있도록 학습을 진행하였으며, 실제로 이전 각 case를 independent하게 진행하였을때보다 조금더 정확한 결과가 나왔음을 확인할 수 있었습니다. 
 
 ## Conclusion
 
