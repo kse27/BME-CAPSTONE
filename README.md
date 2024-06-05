@@ -17,6 +17,8 @@ _data_preprocessing.py_
 * 같은 환자에 대해서 펩타이드/단백질 정보를 가지고 있으나 특정 월에 존재하지 않을 때, 각 환자 별 평균값으로 NULL 값을 대체하였습니다
 * 같은 환자에 대해서 특정 펩타이드/단백질 정보를 가지고 있지 않다면 환자에게 해당 정보가 없다고 판단하여 0으로 대체하였습니다
 
+<img width="800" alt="KakaoTalk_20240604_161941782" src="https://github.com/kse27/BME-CAPSTONE/assets/145419092/3db404af-11c4-4db4-a754-7b05e4179db0">
+
 ## Train Model
 _compare_model.py_
 
@@ -37,6 +39,8 @@ _lstm.py_
 -데이터에 시계열 데이터를 포함하여 LSTM 모델으로 학습해보았습니다. 이를 통해, 각 환자마다 달마다 변화하는 추이를 학습하여 다음 방문때의 UPDRS 를 예측할 수 있도록 학습을 진행하였으며, 실제로 이전 각 case를 independent하게 진행하였을때보다 조금더 정확한 결과가 나왔음을 확인할 수 있었습니다. 
 
 ## Conclusion
+<img width="800" alt="KakaoTalk_20240604_161933410" src="https://github.com/kse27/BME-CAPSTONE/assets/145419092/86d70500-521f-4d4e-9dd0-296e989c0037">
+
 
 
 ## Reference
