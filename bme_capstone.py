@@ -163,30 +163,6 @@ for label in target:
     mse_3_dict[label] = avg_mse
     print("Mean Squared Error for", label, ":", avg_mse)
 
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-for label,model in xgboost_dict.items():
-
-# 특징 중요도 확인
-  feature_importance = model.feature_importances_
-
-# 특징 중요도를 DataFrame으로 변환
-  feature_importance_df = pd.DataFrame({'Feature': X.columns, 'Importance': feature_importance})
-
-# 중요도 기준으로 내림차순 정렬
-  feature_importance_df = feature_importance_df.sort_values(by='Importance', ascending=False)
-
-# 중요도가 높은 순으로 상위 10개 특징 선택
-  top_features = feature_importance_df.head(50)
-
-# 상위 10개 특징 시각화
-  plt.figure(figsize=(10, 6))
-  sns.barplot(x='Importance', y='Feature', data=top_features, palette='viridis')
-  plt.title(f'Top 10 Features by Importance {label}')
-  plt.xlabel('Importance')
-  plt.ylabel('Feature')
-  plt.show()
 
 """## RF"""
 
