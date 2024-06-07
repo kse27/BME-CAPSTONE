@@ -42,8 +42,9 @@ _lstm.py_
 <img width="800" alt="KakaoTalk_20240604_161933410" src="https://github.com/kse27/BME-CAPSTONE/assets/145419092/86d70500-521f-4d4e-9dd0-296e989c0037">
 
 ## Conclusion
-
+1. UPDRS 점수를 예측하는 것에 중요하게 사용된 feature를 알아냄으로써, 각 updrs 점수당 어떤 단백질/펩타이드가 중요한 영향을 끼치는지를 알아볼 수 있었습니다. 이를 통해, 실제로 아직 파킨슨병과의 연관성이 알려지지 않은 단백질이지만 추후에 연관성이 알려지기를 기대할 수 있었습니다.
+   
+2. 시계열 데이터를 활용함으로써, 개인의 단백질 차이에 의해 다르게 예측되는 UPDRS 점수를 예측할 수 있었습니다. 이를 통해, 추후에 이 모델을 활용하게 된다면, 주어진 단백질 정보를 통해 예상되는 UPDRS 점수를 예측하여 의학적 분야에 사용될 수 있을거라 기대합니다.
+   
 ## Reference
 DATA - https://www.kaggle.com/competitions/amp-parkinsons-disease-progression-prediction/data <br/>
-Project 
-(updrs, regression model, LSTM model)
