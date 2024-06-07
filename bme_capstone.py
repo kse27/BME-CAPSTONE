@@ -58,7 +58,7 @@ train_clinical = pd.read_csv("/content/drive/MyDrive/BME/amp-parkinsons-disease-
 # visit_id를 기준으로 두 파일 병합 (외부 조인)
 merged_df = pd.merge(a_data, train_clinical, on='visit_id', how='outer')
 
-# 마지막 열을 제거
+# 마지막 열을 제거 - 약물 복용 여부
 df = merged_df.drop(merged_df.columns[-1], axis=1)
 
 # 'patient id'와 'visitmonth' 열을 제거합니다
