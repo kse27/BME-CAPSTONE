@@ -19,6 +19,9 @@ _data_preprocessing.py_
 
 <img width="800" alt="KakaoTalk_20240604_161941782" src="https://github.com/kse27/BME-CAPSTONE/assets/145419092/3db404af-11c4-4db4-a754-7b05e4179db0">
 
+## Overview
+<img width="800" alt="KakaoTalk_20240604_161933410" src="https://github.com/kse27/BME-CAPSTONE/assets/145419092/86d70500-521f-4d4e-9dd0-296e989c0037">
+
 ## Train Model
 _compare_model.py_
 
@@ -38,9 +41,6 @@ _feature_extraction_50.py_
 _lstm.py_
 
 -데이터에 시계열 데이터를 포함하여 LSTM 모델으로 학습해보았습니다. 이를 통해, 각 환자마다 달마다 변화하는 추이를 학습하여 다음 방문때의 UPDRS 를 예측할 수 있도록 학습을 진행하였으며, 실제로 이전 각 case를 independent하게 진행하였을때보다 조금더 정확한 결과가 나왔음을 확인할 수 있었습니다. 
-
-## Overview
-<img width="800" alt="KakaoTalk_20240604_161933410" src="https://github.com/kse27/BME-CAPSTONE/assets/145419092/86d70500-521f-4d4e-9dd0-296e989c0037">
 
 ## Conclusion
 1. UPDRS 점수를 예측하는 것에 중요하게 사용된 feature를 알아냄으로써, 각 updrs 점수당 어떤 단백질/펩타이드가 중요한 영향을 끼치는지를 알아볼 수 있었습니다. 이를 통해, 실제로 아직 파킨슨병과의 연관성이 알려지지 않은 단백질이지만 추후에 연관성이 알려지기를 기대할 수 있었습니다.
