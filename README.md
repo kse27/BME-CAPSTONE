@@ -24,7 +24,8 @@ _compare_model.py_
 
 회귀문제 해결을 위해, XGBoost, SVM, Random Forest 모델과 각각을 앙상블하여 만든 모델들을 사용하여 결과를 비교해보았습니다. 우리가 방금 한 전처리 데이터를 입력으로 사용하여 모델 학습을 진행하였으며, 각 MSE를 구하여 모델간의 결과를 비교했습니다. 그결과 XGBoost 와 Random Forest를 합친 모델이 4가지의 지표에 있어서 모두 좋은 결과가 나타났음을 알 수 있었습니다. 
 
-![스크린샷 2024-06-04 013043](https://github.com/kse27/BME-CAPSTONE/assets/145419092/32a8b504-c981-4651-ac59-b329a899d642)
+![image](https://github.com/kse27/BME-CAPSTONE/assets/145419092/12753828-81bd-47b1-9292-6cfea930c8ea)
+
 
 ## Extract Important Feature
 _feature_extraction_50.py_
