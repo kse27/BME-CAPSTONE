@@ -20,7 +20,8 @@ _data_preprocessing.py_
 <img width="800" alt="KakaoTalk_20240604_161941782" src="https://github.com/kse27/BME-CAPSTONE/assets/145419092/3db404af-11c4-4db4-a754-7b05e4179db0">
 
 ## Overview
-<img width="800" alt="KakaoTalk_20240604_161933410" src="https://github.com/kse27/BME-CAPSTONE/assets/145419092/86d70500-521f-4d4e-9dd0-296e989c0037">
+<img width="800" alt="KakaoTalk_20240612_201143021" src="https://github.com/kse27/BME-CAPSTONE/assets/145419092/03625cb3-77b1-4f85-8c66-6fd0a8365e2b">
+
 
 ## Train Model
 _compare_model.py_
