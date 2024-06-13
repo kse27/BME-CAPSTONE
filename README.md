@@ -39,13 +39,24 @@ _feature_extraction_50.py_
 
 ## Train LSTM model
 _lstm.py_
+_pca.py_
 
--데이터에 시계열 데이터를 포함하여 LSTM 모델으로 학습해보았습니다. 이를 통해, 각 환자마다 달마다 변화하는 추이를 학습하여 다음 방문때의 UPDRS 를 예측할 수 있도록 학습을 진행하였으며, 실제로 이전 각 case를 independent하게 진행하였을때보다 조금더 정확한 결과가 나왔음을 확인할 수 있었습니다. 
+Feature Selection 과 PCA를 이용하여 LSTM 모델 학습을 진행하였습니다. 모델의 layer의 unit 수는 50으로 하여 진행하였으며 dropout 을 통해 과적합을 방지하였습니다.
 
-## Conclusion
-1. UPDRS 점수를 예측하는 것에 중요하게 사용된 feature를 알아냄으로써, 각 updrs 점수당 어떤 단백질/펩타이드가 중요한 영향을 끼치는지를 알아볼 수 있었습니다. 이를 통해, 실제로 아직 파킨슨병과의 연관성이 알려지지 않은 단백질이지만 추후에 연관성이 알려지기를 기대할 수 있었습니다.
+## Result
+![image](https://github.com/kse27/BME-CAPSTONE/assets/145419092/83a0453f-9f75-474e-b2fc-afb9fe1fac38)
+
+## Discussion
+1. Model이 중요하게 학습한  feature 분석
+파킨슨병 연구에서 중요하게 보는 단백질(ex. Alpha-synuclein)과 파킨슨병과의 연관성이 아직 알려지지 않은 단백질(ex. Tau Protein)이 UPDRS 점수를 예측할 때 중요한 feature로 작용했다는 결과
+ 현재는 파킨슨 병과 직접적인 연관성이 밝혀지지 않은 단백질 혹은 펩타이드도 향후 연구를 통해 해당 질병과의 상관관계를 밝힐 수 있을 거라 기대
+
    
-2. 시계열 데이터를 활용함으로써, 개인의 단백질 차이에 의해 다르게 예측되는 UPDRS 점수를 예측할 수 있었습니다. 이를 통해, 추후에 이 모델을 활용하게 된다면, 주어진 단백질 정보를 통해 예상되는 UPDRS 점수를 예측하여 의학적 분야에 사용될 수 있을거라 기대합니다.
+2. Feature Selection vs. PCA (Principal Component Analysis)
+PCA 기법을 이용하여 LSTM 모델을 학습하여 예측을 진행했던 것이 feature importance 기반으로 뽑아서 학습한 것보다 더 좋은 성능을 나타냄
+PCA 가 데이터의 본질적 구조를 더 보존하고 많은 정보를 포함하여 차원 축소를 수행하였기 때문이라고 예상
+성능 향상을 위해, auto encoder 와 같은 다른 차원 축소 기법을 이용해 볼 필요 있음
+
    
 ## Reference
 DATA - https://www.kaggle.com/competitions/amp-parkinsons-disease-progression-prediction/data <br/>
